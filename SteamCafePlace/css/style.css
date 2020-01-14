@@ -1,0 +1,201 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #ffffff;
+    font-family: 'Baskervville', serif;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./../images/cafe.jpg');
+    background-size: cover;
+    height:100vh;
+    background-repeat: no-repeat;
+    /* display:flex; */
+}
+
+.setBg{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItem{
+    height:100px;
+    background-color: rgba(256,256,256,0.3);
+    margin: 5px;
+}
+
+img{
+    margin-left: 5%;
+}
+.clearfix:after{
+    content:"";
+    visibility: hidden;
+    display: block;
+    height:0;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height:120px;
+    width: auto;
+    float:left;
+    margin-top:20px;
+}
+
+.main_nav{
+    float: right;
+    margin-top:60px;
+    display:block;
+}
+
+.main_nav li{
+    /* float: right; */
+    display: inline-block;
+    list-style: none;
+    margin-left:30px;
+    padding: 5px 0px;
+    margin-right:10px;
+
+}
+.main_nav li:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+
+.main_nav li a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+
+}
+
+.main_content{
+    /* width: 1180px */
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 7%;
+    /* top:50%; */
+    /* left:50%; */
+    /* transform: translate(-50%, -50%); */
+    /* border: 1px solid white; */
+
+}
+
+h1{
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 500px;
+    /* transition: background-color 0.2s, border 0.2s, color 0.2s; */
+    margin-right:15px;
+    color:#bf55ec ;
+    border: 1px solid #bf55ec;
+
+}
+
+.btn:hover{
+    background-color:#ffffff;
+}
+
+.changeColor{
+    animation: changecolor 2s infinite;
+}
+@keyframes changecolor{
+    0%{color: white;}
+    34%{color:#bf55ec;}
+    100%{color: white;}
+}
+
+.slideInAnimation{
+    animation: slidein 1s 1;
+}
+@keyframes slidein{
+    from{
+        transform: translate3d(0,-100%,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
+
+button{
+    display: none;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: small;
+    text-align: right;
+}
+
+span{
+    margin-right: 2.5%;
+}
+
+@media only screen and (max-width:890px){
+    h1{
+        font-size: 180%;
+    }
+
+    .main_nav{
+        display: none;
+    }
+
+    button{
+        display: inline-block;
+        padding:1%;
+        background-color:transparent;
+        border:1px solid white;
+        color:white;
+        float:right;
+        margin-top: 2%;
+        margin-right: 2%;
+    }
+
+    button:hover{
+        background-color:#bf55ec;
+    }
+
+    .btn{
+        margin-bottom: 4%;
+    }
+
+    .main_nav{
+        float: left;
+        /* margin-left: 50%; */
+    }
+
+    .main_nav li{
+        /* float: left; */
+        display: block;
+        margin-top:10px;
+        text-align: right;
+    }
+
+    
+}

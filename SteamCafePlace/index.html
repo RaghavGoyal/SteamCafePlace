@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sream Cafe Place</title>
+        <link rel="StyleSheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/images.png" type="image/gif" sizes="16x16">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <header>
+        <nav>
+            <div class="row clearfix">
+               <a href="index.html"> <img src="images/images.png" alt="logo" class="logo"> </a>
+
+                <ul class="main_nav slideInAnimation">
+                    <li><a href="#">CAKE DELIVERY</a></li>
+                    <li><a href="#">HOW TO ORDER</a></li>
+                    <li><a href="#">CHECK ORDER</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+                <button class="clearfix" id="b1">MENU</button>
+            </div>
+        </nav>
+
+        <div class="main_content">
+
+        <h1>
+            WELCOME TO MY-CAFE<br>
+            <span class="changeColor">GOYAL'S CREATION</span>
+        </h1>
+
+        <a href="menu.html" class="btn">CLICK TO ORDER</a>
+        <a href="#" class="btn">SHOW MORE</a>
+
+        </div>
+    </header>
+
+    <footer>
+      <span>  <b>Created By:</b> Raghav Goyal  </span>
+    </footer>
+
+
+    <script>
+        document.getElementById("b1").addEventListener("click", displayMenu);
+
+        function displayMenu()
+        {
+            let x=document.getElementsByClassName('main_nav');
+            if(x[0].style.display!="block"){
+                x[0].style.display="block";
+            }
+            else{
+                x[0].style.display="none";
+            }
+        }
+    </script>
+</html>
